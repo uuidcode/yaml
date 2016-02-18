@@ -23,5 +23,8 @@ public class ConfigTest {
 
         config = yamlReader.read(Config.class);
         assertThat(config.getDatabase().getUrl(), is("TEST"));
+
+        config = yamlReader.read(Config.class);
+        assertThat(config.getDatabase().getDriver(), is("b"));
     }
 }
