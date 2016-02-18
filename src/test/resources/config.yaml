@@ -1,0 +1,9 @@
+database: &default
+  url: test
+---
+database:
+  url: TEST
+  driver: a
+---
+database:
+  driver: b
